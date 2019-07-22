@@ -4,7 +4,7 @@
 
 [中文诗歌主页](https://shici.store)是一个基于浏览器的诗词网站， 包含唐诗三百首、宋词三百首等文集。
 
-最全中华古诗词数据库, 唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词。当前仓库基于 [`chinese-poetry`](https://github.com/chinese-poetry/chinese-poetry) 仓库的数据，让它更方便的应用于前端和 node.js 相关项目。
+最全中华古诗词数据库，唐宋两朝近一万四千古诗人，接近5.5万首唐诗加26万宋诗，两宋时期1564位词人，21050首词。当前仓库基于 [`chinese-poetry`](https://github.com/chinese-poetry/chinese-poetry) 仓库的数据，让它更方便的应用于前端和 node.js 相关项目。
 
 ### 安装
 
