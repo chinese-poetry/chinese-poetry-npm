@@ -25,6 +25,74 @@ npm install chinese-poetry --save
 import poetry from 'chinese-poetry/lunyu/lunyu.json';
 ```
 
+### UNPKG
+
+https://unpkg.com/browse/chinese-poetry/chinese-poetry/
+
+上面链接可以在浏览器访问数据。
+
+```bash
+# 根据下面目录拼接 地址 访问数据
+https://unpkg.com/browse/chinese-poetry/chinese-poetry/lunyu/lunyu.json
+```
+
+### 目录
+
+```
+├── ci
+│   ├── README.md
+│   ├── author.song.json
+│   ├── ci.db
+│   ├── ci.song.0.json
+│   ├── ci.song.1000.json
+│   ├── ....
+│   └── main.py
+├── json
+│   ├── README.md
+│   ├── authors.song.json
+│   ├── authors.tang.json
+│   ├── poet.song.0.json
+│   ├── poet.song.1000.json
+│   ├── poet.song.10000.json
+│   ├── poet.song.100000.json
+│   ├── ....
+│   └── 表�\235��\223�\236\204�\227.json
+├── lunyu
+│   ├── README.md
+│   └── lunyu.json
+├── mengxue
+│   ├── README.md
+│   ├── baijiaxing.json
+│   ├── dizigui.json
+│   ├── qianziwen.json
+│   ├── sanzijing-new.json
+│   ├── sanzijing-traditional.json
+│   ├── shenglvqimeng.json
+│   ├── youxueqionglin.json
+│   ├── zengguangxianwen.json
+│   └── zhuzijiaxun.json
+├── rank
+│   ├── README.md
+│   ├── ci
+│   └── server.js
+├── requirements.txt
+├── shijing
+│   ├── README.md
+│   └── shijing.json
+├── sishuwujing
+│   ├── README.md
+│   ├── daxue.json
+│   ├── mengzi.json
+│   └── zhongyong.json
+├── test_poetry.py
+├── wudai
+│   ├── huajianji
+│   └── nantang
+└── youmengying
+    ├── README.md
+    └── youmengying.json
+```
+
 ## License
 
 [MIT](https://github.com/chinese-poetry/chinese-poetry/blob/master/LICENSE) 许可证.
