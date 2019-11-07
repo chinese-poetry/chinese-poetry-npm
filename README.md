@@ -10,8 +10,8 @@
 
 安装《中文诗歌古典文集》包。
 
-> package size:  55.5 MB  
-> unpacked size: 204.6 MB  
+> package size:  68.9 MB
+> unpacked size: 233.0 MB
 
 ```bash
 npm install chinese-poetry --save
@@ -33,8 +33,19 @@ https://unpkg.com/browse/chinese-poetry/chinese-poetry/
 
 ```bash
 # 根据下面目录拼接 地址 访问数据
+# 浏览器中访问
 https://unpkg.com/browse/chinese-poetry/chinese-poetry/lunyu/lunyu.json
+# 直接 JSON 数据
+https://unpkg.com/chinese-poetry@1.1.0/chinese-poetry/lunyu/lunyu.json
 ```
+
+### Githack
+
+https://raw.githack.com/chinese-poetry/chinese-poetry/master/ci/ci.song.4000.json
+
+### Statically
+
+https://cdn.statically.io/gh/chinese-poetry/chinese-poetry/master/ci/ci.song.4000.json
 
 ### 目录
 
@@ -45,6 +56,10 @@ https://unpkg.com/browse/chinese-poetry/chinese-poetry/lunyu/lunyu.json
 │   ├── ci.db
 │   ├── ci.song.0.json
 │   ├── ci.song.1000.json
+│   ├── ci.song.10000.json
+│   ├── ci.song.11000.json
+│   ├── ci.song.12000.json
+│   ├── ci.song.13000.json
 │   ├── ....
 │   └── main.py
 ├── json
@@ -55,7 +70,8 @@ https://unpkg.com/browse/chinese-poetry/chinese-poetry/lunyu/lunyu.json
 │   ├── poet.song.1000.json
 │   ├── poet.song.10000.json
 │   ├── poet.song.100000.json
-│   ├── ....
+│   ├── poet.song.101000.json
+│   ├── ...
 │   └── 表�\235��\223�\236\204�\227.json
 ├── lunyu
 │   ├── README.md
