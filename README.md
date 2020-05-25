@@ -1,6 +1,6 @@
 # chinese-poetry
 
-[![](https://img.shields.io/github/issues/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/issues) [![](https://img.shields.io/github/forks/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/network) [![](https://img.shields.io/github/stars/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/stargazers) ![](http://jaywcjlove.github.io/sb/status/no-dependencies.svg) [![](https://jaywcjlove.github.io/sb/ico/npm.svg)](https://www.npmjs.com/package/chinese-poetry)
+[![](https://img.shields.io/github/issues/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/issues) [![](https://img.shields.io/github/forks/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/network) [![](https://img.shields.io/github/stars/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/stargazers) ![](http://jaywcjlove.github.io/sb/status/no-dependencies.svg) [![](https://img.shields.io/npm/v/chinese-poetry.svg)](https://www.npmjs.com/package/chinese-poetry) [![](https://jaywcjlove.github.io/sb/ico/npm.svg)](https://www.npmjs.com/package/chinese-poetry)
 
 [中文诗歌主页](https://shici.store)是一个基于浏览器的诗词网站， 包含唐诗三百首、宋词三百首等文集。
 
@@ -10,8 +10,8 @@
 
 安装《中文诗歌古典文集》包。
 
-> package size:  68.9 MB
-> unpacked size: 233.0 MB
+> package size:  86.0 MB  
+> unpacked size: 347.3 MB  
 
 ```bash
 npm install chinese-poetry --save
