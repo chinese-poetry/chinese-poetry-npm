@@ -3,6 +3,7 @@
   "version": "1.3.1",
   "description": "最全中华古诗词数据库，唐宋两朝近一万四千古诗人，接近 5.5 万首唐诗加 26 万宋诗. 两宋时期1564位词人，21050首词。",
   "files": [
+    "README.md",
     "chinese-poetry/caocaoshiji",
     "chinese-poetry/ci",
     "chinese-poetry/json",
@@ -19,7 +20,16 @@
   "keywords": [
     "chinese-poetry",
     "chinese",
-    "poetry"
+    "poetry",
+    "caocaoshiji",
+    "lunyu",
+    "mengxue",
+    "shijing",
+    "sishuwujing",
+    "strains",
+    "wudai",
+    "youmengying",
+    "yuanqu"
   ],
   "author": "JG <gaojunqi@outlook.com>",
   "license": "MIT",
