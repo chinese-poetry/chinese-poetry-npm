@@ -1,0 +1,52 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Is a tag created auto?
+        id: create_tag
+        uses: jaywcjlove/create-tag-action@v1.3.6
+        with:
+          package-path: package.json
+
+      - name: Generate Changelog
+        id: changelog
+        uses: jaywcjlove/changelog-generator@v1.5.3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filter-author: (jaywcjlove|小弟调调™|dependabot\[bot\]|Renovate Bot)
+          filter: (^[\s]+?[R|r]elease)|(^[R|r]elease)
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        if: steps.create_tag.outputs.successful
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          name: ${{ steps.create_tag.outputs.version }}
+          tag: ${{ steps.create_tag.outputs.version }}
+          body: |
+            [![](https://img.shields.io/github/issues/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/issues) [![](https://img.shields.io/github/forks/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/network) [![](https://img.shields.io/github/stars/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/stargazers) ![](http://jaywcjlove.github.io/sb/status/no-dependencies.svg) [![](https://img.shields.io/npm/v/chinese-poetry.svg)](https://www.npmjs.com/package/chinese-poetry) [![](https://jaywcjlove.github.io/sb/ico/npm.svg)](https://www.npmjs.com/package/chinese-poetry)
+            
+            Comparing Changes: ${{ steps.changelog.outputs.compareurl }}  
+
+            ${{ steps.changelog.outputs.changelog }}
+
+            ```bash
+            npm install chinese-poetry --save
+            ```
+
+            使用 [`chinese-poetry`](https://www.npmjs.com/package/chinese-poetry) 包中数据。
+
+            ```js
+            import poetry from 'chinese-poetry/lunyu/lunyu.json';
+            ```
