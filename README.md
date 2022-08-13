@@ -35,8 +35,10 @@ https://unpkg.com/browse/chinese-poetry/chinese-poetry/
 # 根据下面目录拼接 地址 访问数据
 # 浏览器中访问
 https://unpkg.com/browse/chinese-poetry/chinese-poetry/lunyu/lunyu.json
-# 直接 JSON 数据
+# 访问 JSON 数据
 https://unpkg.com/chinese-poetry@1.1.0/chinese-poetry/lunyu/lunyu.json
+# 访问最新版本 JSON 数据
+https://unpkg.com/chinese-poetry/chinese-poetry/lunyu/lunyu.json
 ```
 
 #### Githack
