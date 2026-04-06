@@ -1,6 +1,10 @@
 # chinese-poetry
 
-[![](https://img.shields.io/github/issues/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/issues) [![](https://img.shields.io/github/forks/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/network) [![](https://img.shields.io/github/stars/chinese-poetry/chinese-poetry-npm.svg)](https://github.com/chinese-poetry/chinese-poetry-npm/stargazers) ![](http://jaywcjlove.github.io/sb/status/no-dependencies.svg) [![](https://img.shields.io/npm/v/chinese-poetry.svg)](https://www.npmjs.com/package/chinese-poetry) [![](https://jaywcjlove.github.io/sb/ico/npm.svg)](https://www.npmjs.com/package/chinese-poetry)
+[![Buy me a coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-ffdd00?logo=buy-me-a-coffee&logoColor=black)](https://jaywcjlove.github.io/#/sponsor)
+[![Follow On X](https://img.shields.io/badge/Follow%20on%20X-333333?logo=x&logoColor=white)](https://x.com/jaywcjlove)
+[![Downloads](https://img.shields.io/npm/dm/chinese-poetry.svg?style=flat)](https://www.npmjs.com/package/chinese-poetry)
+[![NPM version](https://img.shields.io/npm/v/chinese-poetry.svg?style=flat)](https://npmjs.org/package/chinese-poetry)
+[![CI](https://github.com/jaywcjlove/rehype-attr/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/rehype-attr/actions/workflows/ci.yml)
 
 [中文诗歌主页](https://shici.store)是一个基于浏览器的诗词网站， 包含唐诗三百首、宋词三百首等文集。
 
