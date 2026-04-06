@@ -6,27 +6,30 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
         with: 
           submodules: true
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v6
         with:
-          node-version: 16
+          node-version: 24
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Is a tag created auto?
         id: create_tag
-        uses: jaywcjlove/create-tag-action@v1.3.6
+        uses: jaywcjlove/create-tag-action@main
         with:
-          package-path: package.json
+          package-path: ./package.json
 
       - name: Generate Changelog
         id: changelog
-        uses: jaywcjlove/changelog-generator@v1.5.3
+        uses: jaywcjlove/changelog-generator@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           filter-author: (jaywcjlove|小弟调调™|dependabot\[bot\]|Renovate Bot)
           filter: (^[\s]+?[R|r]elease)|(^[R|r]elease)
 
@@ -34,6 +37,7 @@ jobs:
         uses: ncipollo/release-action@v1
         if: steps.create_tag.outputs.successful
         with:
+          allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
           name: ${{ steps.create_tag.outputs.version }}
           tag: ${{ steps.create_tag.outputs.version }}
@@ -54,7 +58,8 @@ jobs:
             import poetry from 'chinese-poetry/lunyu/lunyu.json';
             ```
 
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          package: package.json
+      # node@v22.0.0+ 
+      # NPM publish using OIDC on github actions
+      # https://gist.github.com/jaywcjlove/a178278521a6f72c74525d3f1d9c4bf9
+      - run: NODE_AUTH_TOKEN="" npm publish --access public --provenance
+        continue-on-error: true
