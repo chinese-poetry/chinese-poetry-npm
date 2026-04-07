@@ -1,3 +1,8 @@
+dist
+
+# Generated files
+.poetry-manifest.json
+
 *.lerna_backup
 .DS_Store
 .cache

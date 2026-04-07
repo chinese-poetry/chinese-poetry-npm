@@ -4,18 +4,7 @@
   "description": "最全中华古诗词数据库，唐宋两朝近一万四千古诗人，接近 5.5 万首唐诗加 26 万宋诗. 两宋时期1564位词人，21050首词。",
   "files": [
     "README.md",
-    "chinese-poetry/caocaoshiji",
-    "chinese-poetry/ci",
-    "chinese-poetry/json",
-    "chinese-poetry/lunyu",
-    "chinese-poetry/mengxue",
-    "chinese-poetry/rank",
-    "chinese-poetry/shijing",
-    "chinese-poetry/sishuwujing",
-    "chinese-poetry/strains",
-    "chinese-poetry/wudai",
-    "chinese-poetry/youmengying",
-    "chinese-poetry/yuanqu"
+    "dist"
   ],
   "keywords": [
     "chinese-poetry",
@@ -43,5 +32,12 @@
   "bugs": {
     "url": "https://github.com/chinese-poetry/chinese-poetry-npm/issues"
   },
-  "homepage": "http://shici.store"
+  "homepage": "http://shici.store",
+  "scripts": {
+    "start": "node scripts/copy-json-data.js",
+    "check-changes": "node scripts/check-changes.js",
+    "test": "node scripts/check-changes.js",
+    "build": "npm run start",
+    "prepack": "npm run build"
+  }
 }
