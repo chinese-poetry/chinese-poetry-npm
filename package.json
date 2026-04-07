@@ -24,6 +24,10 @@
   "contributors": [
     "Kenny Wong<wowohoo@qq.com>"
   ],
+  "funding":[
+    "https://github.com/sponsors/jaywcjlove?o=esb",
+    "https://www.paypal.com/paypalme/kennyiseeyou"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
