@@ -20,6 +20,7 @@ jobs:
           node-version: 24
           registry-url: 'https://registry.npmjs.org'
 
+      - run: npm run test
       - name: Is a tag created auto?
         id: create_tag
         uses: jaywcjlove/create-tag-action@main
